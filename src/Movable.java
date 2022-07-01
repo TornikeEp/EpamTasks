@@ -1,7 +1,5 @@
-public interface Vehicle {
+public interface Movable {
     void startEngine();
     void stopEngine();
     void accelerate();
-    void fly();
-    void swim();
 }

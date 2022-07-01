@@ -1,4 +1,4 @@
-public class Ship implements Vehicle{
+public class Ship implements Movable, Swimmable{
 
     @Override
     public void startEngine() {
@@ -12,11 +12,6 @@ public class Ship implements Vehicle{
 
     @Override
     public void accelerate() {
-        // TODO
-    }
-
-    @Override
-    public void fly() {
         // TODO
     }
 

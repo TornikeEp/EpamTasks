@@ -1,4 +1,4 @@
-public class Airplane implements Vehicle{
+public class Airplane implements Movable, Flyable{
 
     @Override
     public void startEngine() {
@@ -17,11 +17,6 @@ public class Airplane implements Vehicle{
 
     @Override
     public void fly() {
-        // TODO
-    }
-
-    @Override
-    public void swim() {
         // TODO
     }
 }

@@ -1,8 +1,7 @@
-public sealed class Cat extends Animal permits Tiger, Lion {
+public sealed class Cat extends Animal implements Runnable permits Tiger, Lion {
 
     private String name;
     private int age;
-    private int speed;
 
     public Cat(String name, int age){
         this.age = age;
@@ -30,6 +29,7 @@ public sealed class Cat extends Animal permits Tiger, Lion {
         this.age = age;
     }
 
+    @Override
     public void run(){
         System.out.println("Running cat: " + this.name);
     }

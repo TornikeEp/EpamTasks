@@ -1,4 +1,4 @@
-public final class Lion extends Cat{
+public final class Lion extends Cat {
 
     private String name;
     private int age;
@@ -29,6 +29,7 @@ public final class Lion extends Cat{
         this.age = age;
     }
 
+    @Override
     public void run(){
         System.out.println("Running lion: " + this.name);
     }

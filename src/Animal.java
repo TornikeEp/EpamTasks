@@ -1,4 +1,4 @@
-public sealed class Animal permits Cat {
+public sealed class Animal implements Runnable permits Cat {
 
     private String name;
     private int age;
@@ -29,11 +29,9 @@ public sealed class Animal permits Cat {
         this.age = age;
     }
 
+    @Override
     public void run(){
         System.out.println("Running animal: " + this.name);
     }
 
-    static void eat(){
-        System.out.println("Animal is eating");
-    }
 }

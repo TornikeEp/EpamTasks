@@ -14,6 +14,9 @@ public class StringComparator implements Comparator<String> {
         if (StringUtils.isBlank(string2) || string2.length() < 2) {
             return 1;
         }
+        if(Character.compare(string1.charAt(1), string2.charAt(1)) == 0){
+            return string1.compareTo(string2);
+        }
         return Character.compare(string1.charAt(1), string2.charAt(1));
     }
 }

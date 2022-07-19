@@ -3,7 +3,7 @@ package service;
 public class ResumeSearcher implements Searchable {
 
     @Override
-    public void search() {
+    public void searchResume() {
 
     }
 }

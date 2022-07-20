@@ -20,20 +20,19 @@ public class Main {
         main.iterateSet(concurrentSet);
     }
 
-    public void addElements(Set<String> set){
+    public void addElements(Set<String> set) {
         set.add("Tornike");
         set.add("David");
         set.add("Tom");
         set.add("Max");
     }
 
-    public void iterateSet(Set<String> set){
+    public void iterateSet(Set<String> set) {
         Iterator<String> iterator = set.iterator();
-        while(iterator.hasNext()){
+        while (iterator.hasNext()) {
             try {
                 System.out.println(iterator.next());
-
-            } catch (ConcurrentModificationException c){
+            } catch (ConcurrentModificationException c) {
                 System.out.println(c);
                 break;
             }

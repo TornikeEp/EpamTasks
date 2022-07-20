@@ -1,4 +1,5 @@
 import java.util.Iterator;
+import java.util.Set;
 import java.util.TreeSet;
 
 /*
@@ -8,7 +9,7 @@ public class Main {
 
     // Will be printed: Null, David, Abraham, George, Tornike
     public static void main(String[] args) {
-        TreeSet<String> treeSet = new TreeSet<>(new StringComparator());
+        Set<String> treeSet = new TreeSet<>(new StringComparator());
         treeSet.add("Tornike");
         treeSet.add("George");
         treeSet.add("David");

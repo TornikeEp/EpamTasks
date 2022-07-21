@@ -1,7 +1,7 @@
 /*
     Task: Create final static collection. Add and change elements.
  */
-public class Main {
+public class ConstantTask {
 
     /*
         There is no problem to add remove or update elements in static

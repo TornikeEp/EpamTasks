@@ -8,6 +8,10 @@ import java.util.TreeSet;
  */
 public class Main {
 
+    /*
+        ConcurrentModificationException will be thrown if we try to add
+        remove or replace element while we are iterating set.
+     */
     public static void main(String[] args) {
         Main main = new Main();
         Set<Employee> set = new TreeSet<>(new EmployeeNameComparator());

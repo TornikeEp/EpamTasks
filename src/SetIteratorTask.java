@@ -8,10 +8,10 @@ import java.util.concurrent.ConcurrentHashMap;
     The task was to iterate hashset and concurrent set with iterator and
     while iterating add elements in the set.
  */
-public class Main {
+public class SetIteratorTask {
 
     public static void main(String[] args) {
-        Main main = new Main();
+        SetIteratorTask main = new SetIteratorTask();
         Set<String> hashSet = new HashSet<>();
         Set<String> concurrentSet = ConcurrentHashMap.newKeySet();
         main.addElements(hashSet);

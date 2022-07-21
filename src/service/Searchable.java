@@ -1,6 +1,8 @@
 package service;
 
+import model.Resume;
+
 public interface Searchable {
 
-    void search();
+    Resume search(int id);
 }

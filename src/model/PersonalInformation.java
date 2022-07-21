@@ -1,3 +1,5 @@
+package model;
+
 public class PersonalInformation {
 
     private String name;

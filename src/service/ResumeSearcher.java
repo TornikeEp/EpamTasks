@@ -1,9 +1,11 @@
 package service;
 
+import model.Resume;
+
 public class ResumeSearcher implements Searchable {
 
     @Override
-    public void search() {
-
+    public Resume search(int id) {
+        return null;
     }
 }

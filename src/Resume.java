@@ -1,30 +1,29 @@
 public class Resume {
 
-    private String technology;
-    private int yearsOfExperience;
+    private PersonalInformation personalInformation;
+    private WorkExperience workExperience;
 
-    public Resume(String technology, int yearsOfExperience, Candidate candidate) {
-        this.technology = technology;
-        this.yearsOfExperience = yearsOfExperience;
+    public Resume(PersonalInformation personalInformation, WorkExperience workExperience) {
+        this.personalInformation = personalInformation;
+        this.workExperience = workExperience;
     }
 
     public Resume() {
     }
 
-    public String getTechnology() {
-        return technology;
+    public PersonalInformation getPersonalInformation() {
+        return personalInformation;
     }
 
-    public void setTechnology(String technology) {
-        this.technology = technology;
+    public void setPersonalInformation(PersonalInformation personalInformation) {
+        this.personalInformation = personalInformation;
     }
 
-    public Integer getYearsOfExperience() {
-        return yearsOfExperience;
+    public WorkExperience getWorkExperience() {
+        return workExperience;
     }
 
-    public void setYearsOfExperience(int yearsOfExperience) {
-        this.yearsOfExperience = yearsOfExperience;
+    public void setWorkExperience(WorkExperience workExperience) {
+        this.workExperience = workExperience;
     }
-
 }

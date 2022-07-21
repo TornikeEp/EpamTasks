@@ -6,14 +6,14 @@ import java.util.TreeSet;
     Task: Create different comparators for the class, add objects in treeset
     and modify fields while iterating.
  */
-public class Main {
+public class TreeSetTask {
 
     /*
         ConcurrentModificationException will be thrown if we try to add
         remove or replace element while we are iterating set.
      */
     public static void main(String[] args) {
-        Main main = new Main();
+        TreeSetTask main = new TreeSetTask();
         Set<Employee> set = new TreeSet<>(new EmployeeNameComparator());
         Set<Employee> set2 = new TreeSet<>(new EmployeeNameAndSalaryComparator());
         main.addElements(set);

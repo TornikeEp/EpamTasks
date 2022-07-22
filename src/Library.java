@@ -5,12 +5,12 @@ public class Library {
 
     private String name;
     private int age;
-    private static final List<Book> books = new ArrayList<>();
+    private static final List<Book> BOOKS = new ArrayList<>();
 
     static {
-        books.add(new Book("War and Peace", 1869, 500));
-        books.add(new Book("Hamlet", 1599, 400));
-        books.add(new Book("The brothers of karamazov", 1880, 600));
+        BOOKS.add(new Book("War and Peace", 1869, 500));
+        BOOKS.add(new Book("Hamlet", 1599, 400));
+        BOOKS.add(new Book("The brothers of karamazov", 1880, 600));
     }
 
     public String getName() {
@@ -30,17 +30,17 @@ public class Library {
     }
 
     public static void addBook(Book book) {
-        books.add(book);
+        BOOKS.add(book);
     }
 
     public static void changePages() {
-        for (int i = 0; i < books.size(); i++) {
-            Book currentBook = books.get(i);
+        for (int i = 0; i < BOOKS.size(); i++) {
+            Book currentBook = BOOKS.get(i);
             currentBook.setPages(currentBook.getPages() * 2);
         }
     }
 
     public static void printBooks() {
-        books.forEach(System.out::println);
+        BOOKS.forEach(System.out::println);
     }
 }

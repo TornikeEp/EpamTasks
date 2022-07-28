@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Manager extends Employee{
+public class Manager extends Employee {
 
     private int age;
     private String address;
@@ -13,7 +13,7 @@ public class Manager extends Employee{
 
     @Override
     public void setAge(int age) throws RuntimeException {
-        if(age < 22) {
+        if (age < 22) {
             throw new RuntimeException();
         } else {
             this.age = age;
@@ -23,7 +23,7 @@ public class Manager extends Employee{
     @Override
     public void setAddressFromFile(String filePath) throws FileNotFoundException {
         try (Scanner scanner = new Scanner(new File(filePath))) {
-            if (scanner.hasNext()){
+            if (scanner.hasNext()) {
                 this.address = "Tbilisi " + scanner.next();
             }
         }

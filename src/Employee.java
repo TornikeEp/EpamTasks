@@ -10,11 +10,17 @@ public class Employee {
     private String address;
 
     /*
-        Throwing unchecked exception. Object will not be created.
+        Throwing unchecked exception and after catching it object is still created.
      */
     public Employee(int age, String name, String address) {
-        if (age < 18) {
-            throw new IllegalArgumentException("Age is not valid");
+        try {
+            if (age < 18) {
+                throw new IllegalArgumentException("Age is not valid");
+            } else {
+                this.age = age;
+            }
+        } catch (IllegalArgumentException exception) {
+            System.out.println(exception);
         }
         this.address = address;
         this.name = name;

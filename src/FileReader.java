@@ -9,12 +9,23 @@ public class FileReader {
      */
     public static void readFile(File file) {
         String line = "";
-        try (RandomAccessFile input = new RandomAccessFile(file, "r")) {
+        RandomAccessFile input = null;
+
+        try {
+            input = new RandomAccessFile(file, "r");
             while ((line = input.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException exception) {
             System.out.println(exception);
+        } finally {
+            if (input != null) {
+                try {
+                    input.close();
+                } catch (IOException ioException) {
+                    System.out.println(ioException);
+                }
+            }
         }
     }
 

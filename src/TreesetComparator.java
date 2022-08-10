@@ -5,7 +5,7 @@ import java.util.TreeSet;
 /*
     Add strings in TreeSet which are compared with second letter.
  */
-public class Main {
+public class TreesetComparator {
 
     // Will be printed: Null, David, Abraham, George, Tornike
     public static void main(String[] args) {

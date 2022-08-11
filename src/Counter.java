@@ -4,7 +4,7 @@ import java.util.concurrent.Executors;
 /*
     Task - make synchronized counter.
  */
-class Counter implements Runnable {
+public class Counter implements Runnable {
 
     private static int counter = 0;
 

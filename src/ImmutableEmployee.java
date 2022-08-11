@@ -28,12 +28,12 @@ public final class ImmutableEmployee {
     }
 
     public List<Responsibility> getResponsibilities() {
-        List<Responsibility> responsibilityList = new ArrayList<>();
+        List<Responsibility> clonedResponsibilities = new ArrayList<>();
         for (Responsibility responsibility : responsibilities) {
             Responsibility clonedResponsibility = new Responsibility(responsibility);
-            responsibilityList.add(clonedResponsibility);
+            clonedResponsibilities.add(clonedResponsibility);
         }
-        return responsibilityList;
+        return clonedResponsibilities;
     }
 
     @Override

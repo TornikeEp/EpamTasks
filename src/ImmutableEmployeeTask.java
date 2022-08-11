@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImmutableTask {
+public class ImmutableEmployeeTask {
 
     /*
         Task - make ImmutableEmployee immutable.

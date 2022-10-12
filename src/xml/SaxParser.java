@@ -21,7 +21,7 @@ public class SaxParser implements Parsable {
         SAXParserFactory saxParserFactory = SAXParserFactory.newInstance();
         try {
             SAXParser saxParser = saxParserFactory.newSAXParser();
-            MyHandler handler = new MyHandler();
+            SaxHandler handler = new SaxHandler();
             saxParser.parse(new File(FILENAME), handler);
             List<Book> books = handler.getBooks();
             for (Book book : books)

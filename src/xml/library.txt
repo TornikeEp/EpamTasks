@@ -1,0 +1,18 @@
+<?xml version = "1.0"?>
+<library>
+   <book id = "1">
+      <name>One Hundred Years of Solitude</name>
+      <year>1937</year>
+      <genre>drama</genre>
+   </book>
+   <book id = "2">
+         <name>The Great Gatsby</name>
+         <year>1945</year>
+          <genre>drama</genre>
+   </book>
+   <book id = "3">
+          <name>Moby Dick</name>
+          <year>1984</year>
+          <genre>drama</genre>
+   </book>
+</library>
